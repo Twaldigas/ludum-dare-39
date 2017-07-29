@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="15" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://scripts/player.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://assets/textures/character_walking_0.tex" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://assets/textures/character_climb_2.tex" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://assets/textures/character_walking_1.tex" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://assets/textures/character_climb_0.tex" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://assets/textures/character_climb_1.tex" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://assets/textures/character_walking_2.tex" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://assets/textures/character_shoots_1.png.tex" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://assets/textures/character_shoots_4.png.tex" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://assets/textures/character_shoots_2.png.tex" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://assets/textures/character_shoots_3.png.tex" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://assets/textures/character_shoots_0.tex" type="Texture" index="5"></ext_resource>
+	<resource type="RectangleShape2D" path="local://2">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 8, 12 </vector2>
+
+	</resource>
+	<resource type="SpriteFrames" path="local://1">
+		<array name="animations" len="4" shared="false">
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="1">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "idle" </string>
+				<string> "speed" </string>
+				<real> 1 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="4" shared="false">
+					<resource  external="2">  </resource>
+					<resource  external="3">  </resource>
+					<resource  external="4">  </resource>
+					<resource  external="3">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "climbing" </string>
+				<string> "speed" </string>
+				<real> 3 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="6" shared="false">
+					<resource  external="5">  </resource>
+					<resource  external="6">  </resource>
+					<resource  external="6">  </resource>
+					<resource  external="7">  </resource>
+					<resource  external="8">  </resource>
+					<resource  external="9">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> False </bool>
+				<string> "name" </string>
+				<string> "shooting" </string>
+				<string> "speed" </string>
+				<real> 10 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="4" shared="false">
+					<resource  external="10">  </resource>
+					<resource  external="1">  </resource>
+					<resource  external="11">  </resource>
+					<resource  external="1">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "walking" </string>
+				<string> "speed" </string>
+				<real> 8 </real>
+			</dictionary>
+		</array>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="21">
+				<string> "Player" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "collision/margin" </string>
+				<string> "script/script" </string>
+				<string> "KinematicBody2D" </string>
+				<string> "AnimatedSprite" </string>
+				<string> "frames" </string>
+				<string> "animation" </string>
+				<string> "__meta__" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "visibility/visible" </string>
+				<string> "transform/pos" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "Position2D" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 4 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="66"> 				-1, -1, 9, 0, -1, 8, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 10, -1, 3, 11, 6, 12, 7, 13, 8, 0, 0, 0, 14, 14, -1, 6, 15, 0, 16, 9, 17, 1, 18, 0, 19, 10, 13, 11, 0, 0, 0, 20, 20, -1, 2, 16, 12, 13, 13, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="14" shared="false">
+				<bool> False </bool>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 4 </matrix32>
+				<int> 1 </int>
+				<real> 0.08 </real>
+				<resource  external="0">  </resource>
+				<resource  resource_type="SpriteFrames" path="local://1">  </resource>
+				<string> "idle" </string>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0, 4 </vector2>
+				<int> 0 </int>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 12, 4 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

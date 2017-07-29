@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="18" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://assets/textures/bandit_shoots_2.tex" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_shoots_4.tex" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_walk_0.tex" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_shoots_3.tex" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_walk_2.tex" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_walk_1.tex" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_shoots_1.tex" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_shoots_0.tex" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_dying_0.tex" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_dying_4.tex" type="Texture" index="13"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_dying_2.tex" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_dying_1.tex" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://assets/textures/bandit_dying_3.tex" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://scripts/bandit.gd" type="Script" index="0"></ext_resource>
+	<resource type="RectangleShape2D" path="local://2">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 8, 12 </vector2>
+
+	</resource>
+	<resource type="SpriteFrames" path="local://1">
+		<array name="animations" len="4" shared="false">
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="1">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "idle" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="5" shared="false">
+					<resource  external="2">  </resource>
+					<resource  external="3">  </resource>
+					<resource  external="4">  </resource>
+					<resource  external="5">  </resource>
+					<resource  external="6">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> False </bool>
+				<string> "name" </string>
+				<string> "shooting" </string>
+				<string> "speed" </string>
+				<real> 10 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="4" shared="false">
+					<resource  external="7">  </resource>
+					<resource  external="1">  </resource>
+					<resource  external="8">  </resource>
+					<resource  external="1">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "walking" </string>
+				<string> "speed" </string>
+				<real> 4 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="8" shared="false">
+					<resource  external="9">  </resource>
+					<resource  external="10">  </resource>
+					<resource  external="9">  </resource>
+					<resource  external="11">  </resource>
+					<resource  external="12">  </resource>
+					<resource  external="13">  </resource>
+					<resource  external="13">  </resource>
+					<resource  external="13">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> False </bool>
+				<string> "name" </string>
+				<string> "dying" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+		</array>
+
+	</resource>
+	<resource type="RectangleShape2D" path="local://3">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 8, 12 </vector2>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="33">
+				<string> "Bandit" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "collision/margin" </string>
+				<string> "script/script" </string>
+				<string> "KinematicBody2D" </string>
+				<string> "AnimatedSprite" </string>
+				<string> "frames" </string>
+				<string> "animation" </string>
+				<string> "flip_h" </string>
+				<string> "__meta__" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "visibility/visible" </string>
+				<string> "transform/pos" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "Area2D" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "linear_damp" </string>
+				<string> "angular_damp" </string>
+				<string> "ShootTimer" </string>
+				<string> "process_mode" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
+				<string> "Timer" </string>
+				<string> "Position2D" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 7 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="125"> 				-1, -1, 9, 0, -1, 8, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 10, -1, 4, 11, 6, 12, 7, 13, 8, 14, 9, 0, 0, 0, 15, 15, -1, 6, 16, 0, 17, 10, 18, 1, 19, 0, 20, 11, 14, 12, 0, 0, 0, 21, 21, -1, 9, 1, 8, 2, 13, 3, 2, 4, 0, 22, 14, 23, 15, 24, 16, 25, 17, 14, 18, 0, 3, 0, 15, 15, -1, 6, 16, 0, 17, 10, 18, 13, 19, 0, 20, 11, 14, 19, 0, 0, 0, 31, 26, -1, 4, 27, 3, 28, 20, 29, 8, 30, 8, 0, 0, 0, 32, 32, -1, 1, 17, 21, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="22" shared="false">
+				<bool> False </bool>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 4 </matrix32>
+				<int> 1 </int>
+				<real> 0.08 </real>
+				<resource  external="0">  </resource>
+				<resource  resource_type="SpriteFrames" path="local://1">  </resource>
+				<string> "idle" </string>
+				<bool> True </bool>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0, 4 </vector2>
+				<int> 0 </int>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="Shape2D" path="local://3">  </resource>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<real> 1 </real>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<real> 5 </real>
+				<vector2> -12, 0 </vector2>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
