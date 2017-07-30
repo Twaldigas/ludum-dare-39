@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
-	<ext_resource path="res://scenes/locomotive.xml" type="PackedScene" index="1"></ext_resource>
-	<ext_resource path="res://scenes/bandit.xml" type="PackedScene" index="2"></ext_resource>
-	<ext_resource path="res://scenes/player.xml" type="PackedScene" index="0"></ext_resource>
+<resource_file type="PackedScene" subresource_count="12" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://scenes/locomotive.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://scenes/player.xml" type="PackedScene" index="1"></ext_resource>
+	<ext_resource path="res://scripts/hud.gd" type="Script" index="3"></ext_resource>
+	<ext_resource path="res://scripts/world.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://assets/fonts/Carnevalee Freakshow.fnt" type="BitmapFont" index="8"></ext_resource>
+	<ext_resource path="res://assets/textures/hp_3.tex" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://assets/textures/energy_bar_underlay.tex" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://assets/textures/energy_bar_overlay.tex" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://assets/textures/energy_bar_progress.tex" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://assets/textures/background_double.tex" type="Texture" index="9"></ext_resource>
 	<resource type="Curve2D" path="local://1">
 		<real name="bake_interval"> 5 </real>
 		<dictionary name="_data" shared="false">
@@ -21,13 +28,13 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="35">
+			<string_array  len="76">
 				<string> "World" </string>
+				<string> "script/script" </string>
 				<string> "Node" </string>
 				<string> "Player" </string>
 				<string> "transform/pos" </string>
 				<string> "Locomotive" </string>
-				<string> "z/z" </string>
 				<string> "Camera2D" </string>
 				<string> "anchor_mode" </string>
 				<string> "rotating" </string>
@@ -47,32 +54,73 @@
 				<string> "drag_margin/bottom" </string>
 				<string> "Path2D" </string>
 				<string> "curve" </string>
-				<string> "PathFollow2D" </string>
-				<string> "transform/rot" </string>
+				<string> "HUD" </string>
+				<string> "layer" </string>
 				<string> "offset" </string>
-				<string> "h_offset" </string>
-				<string> "v_offset" </string>
-				<string> "rotate" </string>
-				<string> "cubic_interp" </string>
-				<string> "loop" </string>
-				<string> "lookahead" </string>
-				<string> "Bandit" </string>
+				<string> "rotation" </string>
+				<string> "scale" </string>
+				<string> "CanvasLayer" </string>
+				<string> "HP" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "texture" </string>
+				<string> "stretch_mode" </string>
+				<string> "TextureFrame" </string>
+				<string> "Energy" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "range/rounded" </string>
+				<string> "texture/under" </string>
+				<string> "texture/over" </string>
+				<string> "texture/progress" </string>
+				<string> "radial_fill/fill_degrees" </string>
+				<string> "radial_fill/center_offset" </string>
+				<string> "TextureProgress" </string>
+				<string> "KilledBandits" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "custom_colors/font_color" </string>
+				<string> "text" </string>
+				<string> "percent_visible" </string>
+				<string> "lines_skipped" </string>
+				<string> "max_lines_visible" </string>
+				<string> "Label" </string>
+				<string> "EnergyTimer" </string>
+				<string> "process_mode" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
+				<string> "Timer" </string>
+				<string> "SpawnTimer" </string>
+				<string> "IncDifficultyTimer" </string>
+				<string> "Background" </string>
+				<string> "z/z" </string>
+				<string> "Sprite" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 7 </int>
+			<int> 13 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="115"> 				-1, -1, 1, 0, -1, 0, 0, 0, 0, 2147483647, 2, 0, 1, 3, 1, 0, 0, 0, 2147483647, 4, 2, 2, 3, 3, 5, 4, 0, 0, 0, 6, 6, -1, 17, 3, 5, 7, 6, 8, 7, 9, 8, 10, 9, 11, 10, 12, 10, 13, 11, 14, 11, 15, 8, 16, 8, 17, 7, 18, 12, 19, 13, 20, 13, 21, 13, 22, 13, 0, 0, 0, 23, 23, -1, 2, 3, 14, 24, 15, 0, 4, 0, 25, 25, -1, 9, 3, 16, 26, 17, 27, 18, 28, 18, 29, 18, 30, 7, 31, 8, 32, 7, 33, 19, 0, 5, 0, 2147483647, 34, 20, 2, 3, 21, 26, 22, 0 </int_array>
+			<int_array  len="263"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 2147483647, 3, 1, 1, 4, 2, 0, 0, 0, 2147483647, 5, 3, 1, 4, 4, 0, 0, 0, 6, 6, -1, 17, 4, 5, 7, 6, 8, 7, 9, 8, 10, 9, 11, 10, 12, 10, 13, 11, 14, 11, 15, 8, 16, 8, 17, 7, 18, 12, 19, 13, 20, 13, 21, 13, 22, 13, 0, 0, 0, 23, 23, -1, 2, 4, 14, 24, 15, 0, 0, 0, 30, 25, -1, 5, 26, 6, 27, 16, 28, 17, 29, 18, 1, 19, 0, 5, 0, 42, 31, -1, 10, 32, 8, 33, 8, 34, 20, 35, 20, 36, 21, 37, 21, 38, 17, 39, 17, 40, 22, 41, 23, 0, 5, 0, 56, 43, -1, 20, 32, 7, 33, 8, 34, 20, 35, 20, 36, 24, 37, 21, 38, 25, 39, 26, 44, 17, 45, 27, 46, 28, 47, 17, 48, 27, 49, 7, 50, 7, 51, 29, 52, 30, 53, 31, 54, 32, 55, 16, 0, 5, 0, 64, 57, -1, 14, 32, 8, 33, 8, 34, 20, 35, 23, 36, 33, 37, 34, 38, 35, 39, 36, 58, 37, 59, 38, 60, 39, 61, 28, 62, 23, 63, 40, 0, 0, 0, 70, 65, -1, 4, 66, 6, 67, 28, 68, 7, 69, 8, 0, 0, 0, 70, 71, -1, 4, 66, 6, 67, 12, 68, 7, 69, 8, 0, 0, 0, 70, 72, -1, 4, 66, 6, 67, 21, 68, 7, 69, 8, 0, 0, 0, 75, 73, -1, 3, 4, 41, 74, 42, 40, 43, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="23" shared="false">
+			<array  len="44" shared="false">
 				<resource  external="0">  </resource>
-				<vector2> 128, 284 </vector2>
 				<resource  external="1">  </resource>
+				<vector2> 128, 284 </vector2>
+				<resource  external="2">  </resource>
 				<vector2> 100, 268 </vector2>
-				<int> -1 </int>
-				<vector2> 212, 224 </vector2>
+				<vector2> 212, 218 </vector2>
 				<int> 1 </int>
 				<bool> False </bool>
 				<bool> True </bool>
@@ -81,15 +129,36 @@
 				<int> 10000000 </int>
 				<real> 5 </real>
 				<real> 0.2 </real>
-				<vector2> 268, 216 </vector2>
+				<vector2> 268, 219 </vector2>
 				<resource  resource_type="Curve2D" path="local://1">  </resource>
-				<vector2> 236, 8 </vector2>
-				<real> -179.999985 </real>
+				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
-				<real> 4 </real>
-				<resource  external="2">  </resource>
-				<vector2> 4, -4 </vector2>
-				<real> 179.999985 </real>
+				<vector2> 1, 1 </vector2>
+				<resource  external="3">  </resource>
+				<int> 2 </int>
+				<real> 20 </real>
+				<resource  external="4">  </resource>
+				<int> 0 </int>
+				<real> 485 </real>
+				<real> 581 </real>
+				<real> 45 </real>
+				<real> 100 </real>
+				<real> 1 </real>
+				<resource  external="5">  </resource>
+				<resource  external="6">  </resource>
+				<resource  external="7">  </resource>
+				<real> 360 </real>
+				<real> 256 </real>
+				<real> 16 </real>
+				<real> 356 </real>
+				<real> 37 </real>
+				<resource  external="8">  </resource>
+				<color> 0, 0, 0, 1 </color>
+				<string> "0 Killed Bandits" </string>
+				<int> -1 </int>
+				<vector2> 2, 218 </vector2>
+				<int> -4 </int>
+				<resource  external="9">  </resource>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
