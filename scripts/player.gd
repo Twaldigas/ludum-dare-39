@@ -17,6 +17,7 @@ var bullet_scene = preload("res://scenes/bullet.xml")
 onready var anim_sprite = get_node("AnimatedSprite")
 onready var area2d = get_node("Area2D")
 onready var hitTimer = get_node("HitTimer")
+onready var smp_player = get_node("SamplePlayer")
 
 onready var world = get_tree().get_root().get_node("World")
 onready var battle_area = get_tree().get_root().get_node("World/Locomotive/BattleArea")
@@ -31,6 +32,7 @@ var is_shoveling = false
 var is_invulnerable = false
 var is_climbing = false
 var is_dying = false
+var is_dead = false
 
 var can_climb_up = false
 var can_climb_down = false
@@ -77,7 +79,7 @@ func _fixed_process(delta):
 		anim_sprite.play(anim_sprite.get_animation())
 		
 	if(is_invulnerable):
-		anim_sprite.set_opacity(0.7)
+		anim_sprite.set_opacity(0.5)
 	else:
 		anim_sprite.set_opacity(1.0)
 	
@@ -147,6 +149,7 @@ func _handle_shooting():
 		get_parent().add_child(bullet)
 		
 		bullet.set_linear_velocity(Vector2(200.0 * ss, 0))
+		smp_player.play("shot")
 	
 func _handle_shoveling():
 	if(is_shoveling == false && Input.is_action_pressed("ui_accept")):
@@ -156,6 +159,7 @@ func _handle_shoveling():
 		anim_sprite.set_animation("shoveling")
 		anim_sprite.set_flip_h(false)
 		world.increase_energy()
+		smp_player.play("shoveling")
 
 func _handle_climbing(delta):
 	
@@ -228,7 +232,7 @@ func _anim_finished():
 	if(anim_sprite.get_animation() == "shooting"):
 		is_shooting = false
 	elif(anim_sprite.get_animation() == "dying"):
-		print("dead")
+		is_dead = true
 	elif(anim_sprite.get_animation() == "shoveling"):
 		is_shoveling = false
 		
@@ -254,3 +258,6 @@ func _handle_dead():
 	
 func get_hp():
 	return hp
+	
+func is_dead():
+	return is_dead

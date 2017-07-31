@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="20" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://assets/textures/toggle_on.tex" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://assets/textures/menu_bg.tex" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://assets/textures/toggle_off.tex" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://assets/fonts/Carnevalee Freakshow Big.fnt" type="BitmapFont" index="1"></ext_resource>
+	<ext_resource path="res://scripts/menu.gd" type="Script" index="0"></ext_resource>
+	<resource type="StyleBoxEmpty" path="local://2">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://4">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://5">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://3">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://6">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://7">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://1">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://8">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://9">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://10">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://11">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://12">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://13">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://14">
+		<real name="content_margin/left"> -1 </real>
+		<real name="content_margin/right"> -1 </real>
+		<real name="content_margin/top"> -1 </real>
+		<real name="content_margin/bottom"> -1 </real>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="65">
+				<string> "Menu" </string>
+				<string> "script/script" </string>
+				<string> "Node" </string>
+				<string> "Camera2D" </string>
+				<string> "transform/pos" </string>
+				<string> "anchor_mode" </string>
+				<string> "rotating" </string>
+				<string> "current" </string>
+				<string> "zoom" </string>
+				<string> "limit/left" </string>
+				<string> "limit/top" </string>
+				<string> "limit/right" </string>
+				<string> "limit/bottom" </string>
+				<string> "drag_margin/h_enabled" </string>
+				<string> "drag_margin/v_enabled" </string>
+				<string> "smoothing/enable" </string>
+				<string> "smoothing/speed" </string>
+				<string> "drag_margin/left" </string>
+				<string> "drag_margin/top" </string>
+				<string> "drag_margin/right" </string>
+				<string> "drag_margin/bottom" </string>
+				<string> "CanvasLayer" </string>
+				<string> "layer" </string>
+				<string> "offset" </string>
+				<string> "rotation" </string>
+				<string> "scale" </string>
+				<string> "Start" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "custom_styles/hover" </string>
+				<string> "custom_styles/pressed" </string>
+				<string> "custom_styles/focus" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "custom_colors/font_color" </string>
+				<string> "custom_colors/font_color_hover" </string>
+				<string> "custom_colors/font_color_pressed" </string>
+				<string> "toggle_mode" </string>
+				<string> "enabled_focus_mode" </string>
+				<string> "shortcut" </string>
+				<string> "text" </string>
+				<string> "flat" </string>
+				<string> "Button" </string>
+				<string> "Credits" </string>
+				<string> "Exit" </string>
+				<string> "Music" </string>
+				<string> "percent_visible" </string>
+				<string> "lines_skipped" </string>
+				<string> "max_lines_visible" </string>
+				<string> "Label" </string>
+				<string> "MusicToggle" </string>
+				<string> "custom_icons/off" </string>
+				<string> "custom_icons/on" </string>
+				<string> "custom_styles/disabled" </string>
+				<string> "custom_styles/normal" </string>
+				<string> "align" </string>
+				<string> "CheckButton" </string>
+				<string> "Title" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 10 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="334"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 3, 3, -1, 17, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 10, 5, 11, 6, 12, 6, 13, 7, 14, 7, 15, 3, 16, 8, 17, 9, 18, 9, 19, 9, 20, 9, 0, 0, 0, 21, 21, -1, 4, 22, 2, 23, 10, 24, 11, 25, 4, 0, 2, 0, 47, 26, -1, 20, 27, 3, 28, 7, 29, 12, 30, 12, 31, 13, 32, 8, 33, 14, 34, 15, 35, 16, 36, 17, 37, 18, 38, 19, 39, 20, 40, 21, 41, 20, 42, 3, 43, 12, 44, 22, 45, 23, 46, 7, 0, 2, 0, 47, 48, -1, 20, 27, 3, 28, 7, 29, 12, 30, 12, 31, 24, 32, 25, 33, 26, 34, 27, 35, 28, 36, 29, 37, 30, 38, 19, 39, 20, 40, 21, 41, 20, 42, 3, 43, 12, 44, 22, 45, 31, 46, 7, 0, 2, 0, 47, 49, -1, 20, 27, 3, 28, 7, 29, 12, 30, 12, 31, 32, 32, 33, 33, 34, 34, 35, 35, 36, 36, 37, 37, 38, 38, 19, 39, 20, 40, 21, 41, 20, 42, 3, 43, 12, 44, 22, 45, 39, 46, 7, 0, 2, 0, 54, 50, -1, 14, 27, 7, 28, 7, 29, 12, 30, 40, 31, 41, 32, 42, 33, 43, 34, 44, 38, 19, 39, 20, 45, 45, 51, 46, 52, 40, 53, 47, 0, 2, 0, 61, 55, -1, 20, 27, 3, 28, 7, 29, 12, 30, 12, 31, 48, 32, 49, 33, 50, 34, 51, 56, 52, 57, 53, 35, 54, 36, 55, 37, 56, 58, 57, 59, 58, 42, 7, 43, 12, 44, 22, 46, 7, 60, 40, 0, 2, 0, 54, 62, -1, 14, 27, 7, 28, 7, 29, 12, 30, 40, 31, 59, 32, 49, 33, 60, 34, 61, 38, 19, 39, 21, 45, 62, 51, 46, 52, 40, 53, 47, 0, 0, 0, 63, 63, -1, 2, 4, 63, 64, 64, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="65" shared="false">
+				<resource  external="0">  </resource>
+				<vector2> 300, 170 </vector2>
+				<int> 1 </int>
+				<bool> False </bool>
+				<vector2> 1, 1 </vector2>
+				<int> -10000000 </int>
+				<int> 10000000 </int>
+				<bool> True </bool>
+				<real> 5 </real>
+				<real> 0.2 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<int> 2 </int>
+				<real> 228 </real>
+				<real> 372 </real>
+				<real> 41 </real>
+				<resource  resource_type="StyleBox" path="local://2">  </resource>
+				<resource  resource_type="StyleBox" path="local://4">  </resource>
+				<resource  resource_type="StyleBox" path="local://5">  </resource>
+				<resource  external="1">  </resource>
+				<color> 0, 0, 0, 1 </color>
+				<color> 1, 1, 1, 1 </color>
+				<resource name=""></resource>				<string> "Start" </string>
+				<real> 258 </real>
+				<real> 33 </real>
+				<real> 338 </real>
+				<real> 69 </real>
+				<resource  resource_type="StyleBox" path="local://3">  </resource>
+				<resource  resource_type="StyleBox" path="local://6">  </resource>
+				<resource  resource_type="StyleBox" path="local://7">  </resource>
+				<string> "Credits" </string>
+				<real> 274 </real>
+				<real> 63 </real>
+				<real> 325 </real>
+				<real> 99 </real>
+				<resource  resource_type="StyleBox" path="local://1">  </resource>
+				<resource  resource_type="StyleBox" path="local://8">  </resource>
+				<resource  resource_type="StyleBox" path="local://9">  </resource>
+				<string> "Quit" </string>
+				<int> 0 </int>
+				<real> 416 </real>
+				<real> 138 </real>
+				<real> 469 </real>
+				<real> 168 </real>
+				<string> "Music" </string>
+				<real> 1 </real>
+				<int> -1 </int>
+				<real> 480 </real>
+				<real> 144 </real>
+				<real> 556 </real>
+				<real> 166 </real>
+				<resource  external="2">  </resource>
+				<resource  external="3">  </resource>
+				<resource  resource_type="StyleBox" path="local://10">  </resource>
+				<resource  resource_type="StyleBox" path="local://11">  </resource>
+				<resource  resource_type="StyleBox" path="local://12">  </resource>
+				<resource  resource_type="StyleBox" path="local://13">  </resource>
+				<resource  resource_type="StyleBox" path="local://14">  </resource>
+				<real> 118 </real>
+				<real> 254 </real>
+				<real> 174 </real>
+				<string> "Keep Shoveling" </string>
+				<vector2> 300, 169 </vector2>
+				<resource  external="4">  </resource>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

@@ -5,6 +5,7 @@ const WALK_SPEED = 20
 onready var anim_sprite = get_node("AnimatedSprite")
 onready var area2d = get_node("Area2D")
 onready var shoot_timer = get_node("ShootTimer")
+onready var smp_player = get_node("SamplePlayer")
 
 onready var world = get_tree().get_root().get_node("World")
 
@@ -15,6 +16,7 @@ var shoot_range = Vector2(3, 6)
 var is_walking = true
 var is_shooting = false
 var is_dying = false
+var is_dead = false
 
 func _ready():
 	set_fixed_process(true)
@@ -24,7 +26,10 @@ func _ready():
 	shoot_timer.connect("timeout", self, "_shoot")
 	
 func _fixed_process(delta):
-		
+	
+	if(is_dead && smp_player.is_active() == false):
+		self.queue_free()
+				
 	if(is_dying == false && is_shooting == false):
 		get_parent().set_offset(get_parent().get_offset() + (WALK_SPEED * delta))
 	
@@ -40,7 +45,7 @@ func _die(body):
 			area2d.set_collision_mask(0)
 			area2d.set_layer_mask(0)
 			anim_sprite.set_frame(0)
-			anim_sprite.set_opacity(0.7)
+			anim_sprite.set_opacity(0.5)
 			world.inc_killed_bandits()
 	
 func _shoot():
@@ -57,6 +62,7 @@ func _shoot():
 	
 	shoot_timer.set_wait_time(rand_range(shoot_range.x, shoot_range.y))
 	shoot_timer.start()
+	smp_player.play("shot")
 	
 func _handle_animation():
 	if(is_walking):
@@ -73,7 +79,7 @@ func _handle_animation():
 		
 func _anim_finished():
 	if(anim_sprite.get_animation() == "dying"):
-		self.queue_free()
+		is_dead = true
 	elif(anim_sprite.get_animation() == "shooting"):
 		is_shooting = false
 		is_walking = true

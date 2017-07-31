@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="3" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://scripts/highscore.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://assets/fonts/Carnevalee Freakshow Big.fnt" type="BitmapFont" index="1"></ext_resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="51">
+				<string> "Highscore" </string>
+				<string> "script/script" </string>
+				<string> "Node" </string>
+				<string> "Camera2D" </string>
+				<string> "transform/pos" </string>
+				<string> "anchor_mode" </string>
+				<string> "rotating" </string>
+				<string> "current" </string>
+				<string> "zoom" </string>
+				<string> "limit/left" </string>
+				<string> "limit/top" </string>
+				<string> "limit/right" </string>
+				<string> "limit/bottom" </string>
+				<string> "drag_margin/h_enabled" </string>
+				<string> "drag_margin/v_enabled" </string>
+				<string> "smoothing/enable" </string>
+				<string> "smoothing/speed" </string>
+				<string> "drag_margin/left" </string>
+				<string> "drag_margin/top" </string>
+				<string> "drag_margin/right" </string>
+				<string> "drag_margin/bottom" </string>
+				<string> "CanvasLayer" </string>
+				<string> "layer" </string>
+				<string> "offset" </string>
+				<string> "rotation" </string>
+				<string> "scale" </string>
+				<string> "HighscoreTitle" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "custom_colors/font_color" </string>
+				<string> "text" </string>
+				<string> "align" </string>
+				<string> "valign" </string>
+				<string> "percent_visible" </string>
+				<string> "lines_skipped" </string>
+				<string> "max_lines_visible" </string>
+				<string> "Label" </string>
+				<string> "LostReason" </string>
+				<string> "KilledBanditsLabel" </string>
+				<string> "EnergyLeftLabel" </string>
+				<string> "HighscoreLabel" </string>
+				<string> "KilledBanditsScore" </string>
+				<string> "EnergyLeftScore" </string>
+				<string> "RestartLabel" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 12 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="392"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 3, 3, -1, 17, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 10, 5, 11, 6, 12, 6, 13, 7, 14, 7, 15, 3, 16, 8, 17, 9, 18, 9, 19, 9, 20, 9, 0, 0, 0, 21, 21, -1, 4, 22, 2, 23, 10, 24, 11, 25, 4, 0, 2, 0, 43, 26, -1, 16, 27, 7, 28, 7, 29, 12, 30, 13, 31, 14, 32, 11, 33, 15, 34, 16, 35, 17, 36, 18, 37, 19, 38, 2, 39, 2, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 44, -1, 15, 27, 7, 28, 7, 29, 12, 30, 13, 31, 22, 32, 23, 33, 24, 34, 25, 35, 17, 36, 18, 37, 26, 38, 2, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 45, -1, 15, 27, 7, 28, 7, 29, 12, 30, 13, 31, 27, 32, 28, 33, 29, 34, 30, 35, 17, 36, 18, 37, 31, 39, 2, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 46, -1, 15, 27, 7, 28, 7, 29, 12, 30, 13, 31, 27, 32, 32, 33, 33, 34, 34, 35, 17, 36, 18, 37, 35, 39, 2, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 47, -1, 14, 27, 7, 28, 7, 29, 12, 30, 13, 31, 36, 32, 37, 33, 38, 34, 39, 35, 17, 36, 18, 37, 19, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 48, -1, 15, 27, 7, 28, 7, 29, 12, 30, 13, 31, 40, 32, 28, 33, 41, 34, 30, 35, 17, 36, 18, 37, 42, 39, 2, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 49, -1, 14, 27, 7, 28, 7, 29, 12, 30, 13, 31, 40, 32, 32, 33, 43, 34, 34, 35, 17, 36, 18, 37, 44, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 0, -1, 14, 27, 7, 28, 7, 29, 12, 30, 13, 31, 45, 32, 37, 33, 46, 34, 47, 35, 17, 36, 18, 37, 48, 40, 20, 41, 13, 42, 21, 0, 2, 0, 43, 50, -1, 14, 27, 7, 28, 7, 29, 12, 30, 13, 31, 49, 32, 50, 33, 51, 34, 52, 35, 17, 36, 18, 37, 53, 40, 20, 41, 13, 42, 21, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="54" shared="false">
+				<resource  external="0">  </resource>
+				<vector2> 300, 168 </vector2>
+				<int> 1 </int>
+				<bool> False </bool>
+				<vector2> 1, 1 </vector2>
+				<int> -10000000 </int>
+				<int> 10000000 </int>
+				<bool> True </bool>
+				<real> 5 </real>
+				<real> 0.2 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<int> 2 </int>
+				<int> 0 </int>
+				<real> 236 </real>
+				<real> 340 </real>
+				<real> 46 </real>
+				<resource  external="1">  </resource>
+				<color> 0, 0, 0, 1 </color>
+				<string> "Highscore" </string>
+				<real> 1 </real>
+				<int> -1 </int>
+				<real> 64 </real>
+				<real> 52 </real>
+				<real> 516 </real>
+				<real> 82 </real>
+				<string> "The player died." </string>
+				<real> 140 </real>
+				<real> 103 </real>
+				<real> 276 </real>
+				<real> 133 </real>
+				<string> "Killed Bandits" </string>
+				<real> 143 </real>
+				<real> 256 </real>
+				<real> 174 </real>
+				<string> "Energy Left" </string>
+				<real> 215 </real>
+				<real> 227 </real>
+				<real> 303 </real>
+				<real> 275 </real>
+				<real> 304 </real>
+				<real> 443 </real>
+				<string> "20 x 100 = 2000" </string>
+				<real> 440 </real>
+				<string> "80% x 10 = 800" </string>
+				<real> 315 </real>
+				<real> 375 </real>
+				<real> 282 </real>
+				<string> "2800" </string>
+				<real> 132 </real>
+				<real> 287 </real>
+				<real> 461 </real>
+				<real> 335 </real>
+				<string> "Press SPACE to restart the game." </string>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
